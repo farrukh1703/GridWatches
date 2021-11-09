@@ -1,0 +1,555 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background: #f1f1f1;
+}
+.container{
+    max-width: 1140px;
+    min-height: 15px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.header{
+    margin: 20px 0;
+}
+.header__start{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 20px;
+}
+.header__lang{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #323232;
+}
+.header__name{
+    font-family: 'Montserrat-bold';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 23px;
+    text-transform: uppercase;
+    color: #323232;
+}
+.fa-heart,
+.fa-shopping-cart,
+.fa-user{
+    color: #000000;
+}
+.header__navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid #C4C4C4;
+}
+.categories{
+    display: flex;
+    align-items: center;
+}
+.categories li a{
+    padding: 0 25px;
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: capitalize;
+    color: #323232;
+}
+.icons{
+    display: flex;
+    align-items: center;
+}
+.icons li a{
+    padding: 0 15px;
+}
+
+/* ------------------------------------------------------------ */
+
+
+.grid__items{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    grid-template-rows: repeat(2, 385px);
+    gap: 30px;
+}
+.item1{
+    grid-column: span 2;
+    grid-row: span 2;
+    background: #E1E1E1;
+    border-radius: 8px;
+}
+.item2,
+.sec2__item,
+.item3{
+    grid-column: span 1;
+    grid-row: span 1;
+    background: #E1E1E1;
+    border-radius: 8px;
+}
+.item1__icons,
+.item2__icons,
+.sec2item2__icons,
+.item3__icons{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.item1__top--icons,
+.item2__top--icons,
+.sec2item2__top--icons,
+.item3__top--icons{
+    display: flex;
+    flex-direction: column;
+}
+.item1__content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 62px;
+}
+.item1__sale p,
+.item2__sale p,
+.sec2item2__sale p,
+.item3__sale p{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #ffffff;
+    text-transform: capitalize;
+    padding: 10px 25px;
+    background-color: #323232;
+    border-radius: 8px;
+    margin-left: 13px;
+    position: absolute;
+}
+
+
+.item1__top--icons,
+.item2__top--icons,
+.sec2item2__top--icons,
+.item3__top--icons{
+    padding-right: 20px;
+}
+.item1__top--heart-icon,
+.item1__top--cart-icon,
+.item2__top--heart-icon,
+.sec2item2__top--heart-icon,
+.item2__top--cart-icon,
+.sec2item2__top--cart-icon,
+.item3__top--heart-icon,
+.item3__top--cart-icon{
+    padding: 16px;
+    color: #000000;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.item1__top--cart-icon,
+.item2__top--cart-icon,
+.sec2item2__top--cart-icon,
+.item3__top--cart-icon{
+    margin-top: 15px;
+}
+
+.item1__content--img{
+    padding-right: 40px;
+}
+.item1__content--text{
+    padding-right: 30px;
+}
+.item1__content--text h3,
+.item2__content--text h3,
+.sec2item2__content--text h3,
+.item3__content--text h3{
+    font-family: 'Montserrat-bold';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    text-transform: capitalize;
+    text-align: center;
+}
+.item1__content--text p,
+.item2__content--text p,
+.sec2item2__content--text p,
+.item3__content--text p{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+    text-transform: capitalize;
+    text-align: center;
+    padding-top: 16px;
+}
+.item2__content,
+.sec2item2__content,
+.item3__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -115px;
+}
+.item2__content--text,
+.item3__content--text{
+    padding-top: 32px;
+}
+.sec2item2__content--text{
+    padding-top: 27px;
+}
+.section__end{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    margin: 100px 0;
+}
+.sec2grids{
+    display: grid;
+    grid-template-columns: repeat(4, 248px);
+    grid-template-rows: repeat(3, 317px);    
+    gap: 30px;
+}
+/* --------------------------------------------------------- */
+.sec3g1{
+    margin-bottom: 30px;
+}
+.sec3g2{
+    margin-top: 30px;
+}
+.sec3__grid1{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 525px);
+    grid-template-rows: repeat(1, 360px);
+}
+.sec3__item1{
+    background-image: url('../images/watches.png');
+    grid-column: span 1;
+    grid-row: span 1;
+    padding-left: 20px;
+}
+.sec3__advice{
+    padding: 30px 0 30px 0;
+}
+.sec3__advice a{
+    padding: 15px 30px;
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323232;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.sec3__h3,
+.sec3__h4{
+    font-family: 'Montserrat-bold';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #ffffff;
+    font-variant: small-caps;
+}
+.sec3__h3{
+    margin: 20px 0 20px 0;
+}
+.sec3__p{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #E1E1E1;
+    font-variant: small-caps;
+}
+.sec3__data{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 60px 0 10px 0;
+}
+.sec3__data p{
+    margin-left: 10px;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++ */
+.sec3___grid2{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 247.5px);
+    grid-template-rows: repeat(1, 250px);
+    gap: 30px;
+}
+.sec3__item2{
+    background-image: url('../images/watches2.png');
+    grid-column: span 1;
+    grid-row: span 1;
+    padding-left: 20px;
+}
+.sec3__data2{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 23px 0 20px 0;
+}
+.sec3__data2 p{
+    margin-left: 10px;
+}
+.sec3__advice2{
+    padding: 30px 0 23px 0;
+}
+.sec3__advice2 a{
+    padding: 15px 10px;
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #323232;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+.sec3__h4{
+    margin: 13px 0 13px 0;
+}
+.sec3__content2{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.sec3__items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 116px;
+}
+.sec3__content{
+    margin-right: 15px;
+}
+.sec3__content2{
+    margin-left: 15px;
+}
+/* ////////////////////////////////////////////////////////////////////// */
+.footer{
+    background: #ffffff;
+}
+.footer__content{
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+}
+.footer__content h3{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+    color: #323232;
+    font-variant: small-caps;
+}
+.socials a{
+    color: #000000;
+    padding: 0 7px;
+}
+.socials a:hover{
+    color: #eb7413;
+}
+.products__h3,
+.forcustomers__h3{
+    margin-bottom: 40px;
+}
+.products ul li a,
+.forcustomers ul li a{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 13px;
+    font-variant: small-caps;
+    color: #000000;
+}
+.products ul li a:hover,
+.forcustomers ul li a:hover{
+    color: #eb7413;
+}
+.products ul li,
+.forcustomers ul li{
+    padding: 5px 0;
+}
+.footer__info-h3{
+    margin-bottom: 22px;
+}
+.footer__info ul li{
+    font-family: 'Montserrat-regular';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #323232;
+    font-variant: small-caps;
+}
+.footer__info ul li{
+    padding: 7.5px 0;
+}
+.footer__phone{
+    display: flex;
+}
+.footer__phone li{
+    padding: 0 4px;
+}
+.socials__h3{
+    margin: 17.5px 0 20px 0;
+}
+.footer__flex{
+    display: flex;
+    justify-content: space-between;
+}
+.products{
+    margin-right: 111px;
+}
+
+
+
+
+
+@media(max-width: 1080px){
+    .grid__items{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 340px);
+        grid-template-rows: repeat(3, 385px);
+        gap: 30px;
+        justify-content: center;
+    }
+    .header__navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    .icons{
+        margin-top: 15px;
+    }
+    .sec2grids{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 248px);
+        grid-template-rows: repeat(4, 317px);
+        gap: 30px;
+        justify-content: center;
+    }
+    .sec3__items{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .sec3__content{
+        margin: 15px 0 0 0;
+    }
+    .sec3__content2{
+        margin: 0 0 15px 0;
+    }
+    .footer__content{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */ 
+    }
+    .footer__flex{
+        justify-content: space-evenly;
+    }
+    .footer__info{
+        padding-top: 110px;
+        margin: 0 auto;
+    }
+}  
+@media(max-width: 800px){
+    .sec2grids{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 248px);
+        grid-template-rows: repeat(6, 317px);
+        gap: 30px;
+        justify-content: center;
+    }
+}
+@media(max-width: 720px){
+    .grid__items{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 340px);
+        grid-template-rows: repeat(4, 385px);
+        gap: 30px;
+        justify-content: center;
+    } 
+    .item1{
+        grid-column: span 1;
+        grid-row: span 2;
+        background: #E1E1E1;
+        border-radius: 8px;
+    }
+    .item1__content{
+        flex-direction: column;
+    }
+    .item1__content--img{
+        padding-right: 0;
+    }
+    .item1__content--text{
+        margin-top: 20px;
+        padding-right: 0;
+    }
+}
+@media(max-width: 680px){
+    .categories li a {
+        padding: 0 15px;
+    }
+    .header__navbar{
+        display: none;
+    }
+}
+@media(max-width: 528px){
+    .sec2grids{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 248px);
+        grid-template-rows: repeat(12, 317px);
+        gap: 30px;
+        justify-content: center;
+    }
+    .sec3__grid1{
+        display: none;
+    }
+    .sec3___grid2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .sec3__item2{
+        background-image: url('../images/watches3.png');
+    }
+    .footer__flex{
+        justify-content: space-between;
+    }
+}
